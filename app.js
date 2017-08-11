@@ -24,6 +24,16 @@ var winCounter = 0;
 var lossCounter = 0;
 var Guesses = 9;
 
-// FUNCTIONS (These are bits of code that we will call upon to run when needed).
+// FUNCTIONS
 // ==================================================================================================
 
+var startGame = function () {
+
+    // set Guesses to 9 (for start & restart)
+    Guesses = 9;
+
+    // Going through the array to choose a random word
+    chosenWord = languageArray[Math.floor(Math.random() * languageArray.length)];
+
+    // Splitting the word and putting it in the lettersArray
+}
